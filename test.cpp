@@ -1,15 +1,14 @@
-#include <stdio.h>
 #include <iostream>
-#include <string>
-string s(10,'c');
-int a=10;
-unsigned int b=10;
+#include <vector>
+#include <utility>
+
+using namespace std;
+vector< vector<pair<int, int> > >v(100);
 int main()
 {
-if(b<=a)
-	std::cout<<"a";
-else
-	std::cout<<"b";
-
-return 0;
+	int x=1;
+	v[x].push_back(pair<int,int>(3,4));
+	cout<<v[x][0].first<<endl;
+	cout<<v[0][0].first<<endl;
+	return 0;
 }
